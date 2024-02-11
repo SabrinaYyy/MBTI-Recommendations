@@ -1,0 +1,52 @@
+<!-- templates/music.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap">
+    <script src="https://kit.fontawesome.com/f326882dbe.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Music</title>
+</head>
+<body>
+    <header>
+        <h1>Recommended Music</h1>
+    </header>
+
+    <!-- Add content for recommended music -->
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('overview') }}">Home</a></li>
+            <li><a href="{{ url_for('movies') }}">Movies</a></li>
+            <li><a href="{{ url_for('music') }}">Music</a></li>
+        </ul>
+    </nav>
+
+    <h1>Recommended Music for {{ mbti_type|default('Unknown') }}</h1>
+
+
+
+    <ul>
+        
+        {% for song in recommended_songs %}
+        <li>
+            <h3>{{ song.name }}</h3>
+            <p>Artists: {{ song.artists | join(', ') }}</p>
+            <img src="{{ song.image_url }}" alt="{{ song.name }}">
+            <audio controls>
+                <source src="{{ song.preview_url }}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </li>
+        {% endfor %} 
+    </ul>
+
+    <footer>
+        <p class = "jump">
+          <a href="#header_section">Back To Top </a>
+    </footer>
+</body>
+</html>

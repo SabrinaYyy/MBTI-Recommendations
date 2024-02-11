@@ -1,0 +1,155 @@
+/* style.css */
+
+body {
+  background-color: #333;
+}
+
+h1 {
+  border-bottom-style: dashed;
+  border-bottom-color: white;
+  color: white;
+  font-family: "Sixtyfour", "consolas";
+  font-size: 28px;
+  border-width: 3px;
+}
+
+form#mbtiForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form#mbtiForm label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+form#mbtiForm input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form#mbtiForm button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form#mbtiForm button:hover {
+  background-color: #45a049;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background: linear-gradient(cyan, #95b9f2);
+  padding: 14px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: linear-gradient(cyan, #95b9f2); /* Add your desired background color here */
+}
+
+nav ul li {
+  float: left;
+  display: inline;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+nav a:hover {
+  background-color: #95b9f2;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: cadetblue;
+  font-family: "Sixtyfour";
+  font-size: 18px;
+  font-style: initial;
+  border-style: dotted;
+}
+
+/* #p1 {} */
+
+.odd {
+  color: cyan;
+}
+
+.even {
+  color: white;
+}
+
+#box1 {
+  border: 1px solid;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.fa-house-user {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  left: 100px;
+}
+
+.fa-compass {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  left: 60px;
+}

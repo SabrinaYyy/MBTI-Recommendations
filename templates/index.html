@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap">
+    <script src="https://kit.fontawesome.com/f326882dbe.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Your MBTI</title>
+</head>
+<body>
+    <header><h1>MBTI</h1></header>
+
+    <a href="https://www.16personalities.com/free-personality-test">
+        <i class="fa-solid fa-compass"></i>
+    </a >
+
+    <form id="mbtiForm" action="/recommend" method="post">
+        <label for="mbti">Enter your MBTI type:</label>
+        <input type="text" id="mbti" name="mbti" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <script src="static/my.js"></script>
+    <script type="text/javascript">
+        //代码
+    </script>
+    
+    
+    <footer>
+    <p class = "jump">
+      <a href="#header_section">Back To Top </a>
+    </footer>
+</body>
+</html>

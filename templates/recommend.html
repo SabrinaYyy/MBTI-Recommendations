@@ -1,0 +1,33 @@
+<!-- templates/recommend.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap">
+    <script src="https://kit.fontawesome.com/f326882dbe.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations</title>
+</head>
+<body>
+    <header>
+        <h1>Recommendations</h1>
+    </header>
+
+    <!-- Add content for recommendations -->
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('overview') }}">Home</a></li>
+            <li><a href="{{ url_for('movies') }}">Movies</a></li>
+            <li><a href="{{ url_for('music') }}">Music</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p class = "jump">
+          <a href="#header_section">Back To Top </a>
+    </footer>
+</body>
+</html>
